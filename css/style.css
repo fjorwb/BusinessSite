@@ -55,9 +55,11 @@ body .container header .company .logo .logo_img {
 }
 
 body .container header .company .logo .name {
+  text-align: center;
   font-size: 2rem;
   margin-left: 1rem;
   line-height: 2rem;
+  flex: 1 2 100%;
 }
 
 body .container header .company .menu {
@@ -92,10 +94,11 @@ body .container main .offices {
   margin-bottom: 1rem;
   display: flex;
   flex-flow: row wrap;
+  border-bottom: 1px solid #ccc;
 }
 
 body .container main .offices img {
-  flex: 1 1 60%;
+  flex: 1 3 60%;
   padding: 1rem;
 }
 
@@ -109,6 +112,7 @@ body .container main .themes {
   background-color: #ccc;
   padding: 1rem 0 1rem 1rem;
   display: flex;
+  justify-content: center;
 }
 
 body .container main .themes theme {
@@ -120,6 +124,7 @@ body .container main .themes theme {
 body .container main .employees {
   width: 100%;
   padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
 }
 
 body .container main .employees .title {
@@ -185,9 +190,9 @@ body .container footer {
 }
 
 body .container footer p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 1rem 0;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -205,7 +210,15 @@ body .container footer p {
   }
 }
 @media screen and (max-width: 548px) {
+  body .container header .company .logo .name {
+    margin-left: 0;
+  }
+
   body .container main .employees .employ_early {
     flex-direction: column;
+  }
+
+  body .container main .themes {
+    display: none;
   }
 }
