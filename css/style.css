@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: Times;
+  font-size: 16px;
+  background-color: #516851;
+}
+
+body .container {
+  width: 100%;
+  height: fit-content;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+body .container header {
+  width: 100%;
+  border-bottom: 0.5rem solid #000;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body .container header .company {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+body .container header .company .logo {
+  width: 50%;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+}
+
+body .container header .company .logo .logo_img {
+  width: 6rem;
+}
+
+body .container header .company .logo .name {
+  font-size: 2rem;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+body .container header .company .menu {
+  width: 50%;
+  flex: 1 1 50%;
+  float: right;
+  display: flex;
+}
+
+body .container header .company .menu a {
+  padding: 0.75rem 0.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+body .container header .company .menu a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+body .container main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+body .container main .offices {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body .container main .offices img {
+  flex: 1 1 60%;
+  padding: 1rem;
+}
+
+body .container main .offices p {
+  flex: 1 1 40%;
+  padding: 1rem;
+}
+
+body .container main .themes {
+  width: 100%;
+  background-color: #ccc;
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+}
+
+body .container main .themes theme {
+  flex: 1 2 100%;
+  background-color: blue;
+  padding: 2rem 0;
+}
+
+body .container main .employees {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+body .container main .employees .title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+body .container main .employees .employ_early {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+body .container main .employees .employ_early .employ_early .employ {
+  text-align: center;
+}
+
+body .container main .employees .employ_early .employ_early .employ img {
+  border: 1rem solid #ffffff;
+}
+
+body .container main .products {
+  background-color: #ccc;
+  width: 90%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+body .container main .products .product {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body .container main .products .product .prod {
+  width: 15rem;
+}
+
+body .container main .products .product .prod img {
+  width: 50%;
+  border: 0.5rem solid #fff;
+}
+
+body .container main .products .product .prod h3 {
+  flex-shrink: 2;
+  margin-bottom: 1rem;
+}
+
+body .container main .products .product .prod p {
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+}
+
+body .container footer {
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  grid-area: 6 / 1 / 7 / 7;
+  width: 100%;
+  display: flex;
+}
+
+body .container footer p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  body .container header .company {
+    flex-direction: column;
+  }
+  body .container header .company .logo .logo_img {
+    display: none;
+    width: 100%;
+    line-height: 3rem;
+  }
+  body .container header .company .menu {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 548px) {
+  body .container main .employees .employ_early {
+    flex-direction: column;
+  }
+}
